@@ -53,6 +53,7 @@ gradle.projectsEvaluated {
             jsBundleDir = reactBundleTask.generatedAssetsFolders[0].absolutePath
             resourcesDir = reactBundleTask.generatedResFolders[0].absolutePath
 
+            // Nicola Patch, waiting for code push upgrade
             new File(jsBundleDir).mkdirs()
             new File(resourcesDir).mkdirs()
 
